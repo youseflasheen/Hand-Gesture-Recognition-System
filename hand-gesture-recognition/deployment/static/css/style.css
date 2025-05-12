@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f4f4f9, #e0f7fa);
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    animation: bounceIn 1s ease-out;
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+h1 {
+    text-align: center;
+    color: #2E8B57;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+h1 .emoji {
+    font-size: 36px;
+    vertical-align: middle;
+}
+
+.welcome {
+    color: #ff6f61;
+    font-style: italic;
+    margin-bottom: 20px;
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+h2 {
+    color: #4A4A4A;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    transition: transform 0.3s;
+}
+
+.section:hover {
+    transform: scale(1.02);
+}
+
+.upload-box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #fff5e6;
+}
+
+.upload-box label {
+    cursor: pointer;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+.upload-box input {
+    display: none;
+}
+
+.webcam-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.webcam-button:hover {
+    background-color: #1a5c34;
+}
+
+.webcam-button.stop {
+    background-color: #dc3545;
+}
+
+.webcam-button.stop:hover {
+    background-color: #b02a37;
+}
+
+.webcam-feed {
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 640px;
+    margin: 10px 0;
+    border: 2px solid #e0f7fa;
+}
+
+#webcam, #canvas {
+    width: 100%;
+    max-width: 640px;
+    margin: 10px 0;
+}
+
+.result {
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e6f3fa;
+    color: #333;
+}

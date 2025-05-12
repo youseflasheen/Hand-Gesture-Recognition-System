@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASL Gesture Recognition</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>ASL Gesture Recognition Party! 🎉🤟</h1>
+        <p class="welcome">Get ready to have fun recognizing ASL gestures with us! 🌟 Use your webcam to join the excitement!</p>
+
+        <div class="section">
+            <h2>Webcam Recognition 🎥</h2>
+            <button id="startWebcam" class="webcam-button">Start the Fun! 🚀</button>
+            <button id="stopWebcam" class="webcam-button stop" style="display: none;">Stop the Party! 🛑</button>
+            <video id="webcam" class="webcam-feed" autoplay playsinline style="display: none;"></video>
+            <canvas id="canvas" style="display: none;"></canvas>
+            <div id="webcamResult" class="result"></div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='js/webcam.js') }}"></script>
+</body>
+</html>
